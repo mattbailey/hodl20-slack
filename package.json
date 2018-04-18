@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Pushes hodl20 breakdown to slack, uses google spreadsheet for ledger",
   "main": "index.js",
+  "bin": {
+    "hodl20-slack": "index.js"
+  },
   "directories": {
     "lib": "lib"
   },
