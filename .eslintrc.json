@@ -1,0 +1,9 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["airbnb-base", "plugin:prettier/recommended"]
+}
