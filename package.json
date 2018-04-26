@@ -1,8 +1,7 @@
 {
   "name": "hodl20-slack",
   "version": "1.0.0",
-  "description":
-    "Pushes hodl20 breakdown to slack, uses google spreadsheet for ledger",
+  "description": "Pushes hodl20 breakdown to slack, uses google spreadsheet for ledger",
   "main": "index.js",
   "bin": {
     "hodl20-slack": "index.js"
@@ -30,10 +29,12 @@
     "fs-extra": "^5.0.0",
     "googleapis": "^28.1.0",
     "inquirer": "^5.2.0",
+    "luxon": "^1.2.0",
     "node-fetch": "^2.1.2",
     "string-to-color": "^2.0.0"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
