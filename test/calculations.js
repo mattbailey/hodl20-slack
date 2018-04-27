@@ -1,6 +1,10 @@
 import test from 'ava'
 import { DateTime } from 'luxon'
-import { isDistributed, lastBalanceDate } from '../lib/calculations'
+import {
+  isDistributed,
+  lastBalanceDate,
+  stepRectify,
+} from '../lib/calculations'
 
 /*
 const transaction = {
@@ -73,4 +77,12 @@ test('isDistributed should return false if the transaction was made after the la
   const firstTrade = DateTime.fromRFC2822('10 Apr 2018 07:33:00 PDT')
   const last = lastBalanceDate({ start: firstTrade })
   t.false(isDistributed({ last, transaction: { blocktime: 1523382118 } }))
+})
+
+test('stepRectify will rectify a value by a stepSize', async t => {
+  const rectified = stepRectify({ quantity: 1.12345, stepSize: 0.01 })
+  t.is(rectified, 1.12)
+  t.throws(() => {
+    stepRectify({ quantity: 1.12345, stepSize: 0.03 })
+  })
 })
