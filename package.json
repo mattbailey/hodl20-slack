@@ -31,6 +31,7 @@
     "inquirer": "^5.2.0",
     "luxon": "^1.2.0",
     "node-fetch": "^2.1.2",
+    "pino": "^4.16.1",
     "string-to-color": "^2.0.0"
   },
   "devDependencies": {
